@@ -1,0 +1,28 @@
+.card {
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.title {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.description {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+}

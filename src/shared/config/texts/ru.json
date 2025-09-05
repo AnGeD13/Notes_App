@@ -1,0 +1,34 @@
+{
+  "dialog": {
+    "button": {
+      "close": "Закрыть просмотр файла"
+    }
+  },
+  "note": {
+    "createdAt": "Дата создания",
+    "updatedAt": "Дата редактирования"
+  },
+  "note_page": {
+    "general": {
+      "title_label": "Название",
+      "description_label": "Описание",
+      "drag_drop_label": "Перенесите ваш файл (PNG, JPG) сюда",
+      "drag_drop_or": "или",
+      "upload_btn_label": "Выберите файл",
+      "file_chip_label": "Посмотреть выбранный файл"
+    },
+    "create": {
+      "title": "Новая заметка",
+      "button": {
+        "submit": "Создать"
+      }
+    },
+    "edit": {
+      "title": "Редактирование",
+      "button": {
+        "submit": "Сохранить",
+        "delete": "Удалить"
+      }
+    }
+  }
+}

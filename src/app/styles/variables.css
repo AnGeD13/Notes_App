@@ -1,0 +1,11 @@
+:root {
+  --color-dialog-dark: black;
+  --color-upload-dark: black;
+  --bg-noteform: #f5f5f5;
+
+  --bg-upload-hover: #e0e0e0;
+  --bg-upload-label: #90caf9;
+  --bg-upload-label-hover: #42a5f5;
+
+  --transition-duration: 0.2s;
+}

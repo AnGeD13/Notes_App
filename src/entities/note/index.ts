@@ -1,1 +1,1 @@
-export type { Note } from './model/index';
+export type { Note, Attachment } from './model/index';
