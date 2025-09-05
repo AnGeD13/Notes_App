@@ -1,4 +1,5 @@
 export interface ITextProps {
+  linkBack: string;
   dialog: {
     button: {
       close: string;
@@ -7,6 +8,10 @@ export interface ITextProps {
   note: {
     createdAt: string;
     updatedAt: string;
+  };
+  notfound_page: {
+    title: string;
+    status: string;
   };
   note_page: {
     general: {

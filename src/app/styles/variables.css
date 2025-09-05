@@ -1,4 +1,7 @@
 :root {
+  --color-dark: black;
+  --color-secondary: grey;
+
   --color-dialog-dark: black;
   --color-upload-dark: black;
   --bg-noteform: #f5f5f5;

@@ -1,6 +1,8 @@
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { Box, Button, Container, Typography } from '@mui/material';
 import type { JSX } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 import { text } from '@/shared/config/texts';
 import { type CREATE, EDIT } from '@/shared/constants';
@@ -13,8 +15,24 @@ export interface INotePageProps {
 }
 
 export function NotePage({ mode }: INotePageProps): JSX.Element {
+  const navigate = useNavigate();
+
+  const handleSubmit = (): void => {
+    navigate('/');
+  };
+
+  const handleDelete = (): void => {
+    navigate('/');
+  };
+
   return (
     <Container component='section' maxWidth='md' className={styles.wrapper}>
+      <Box className={styles.linkBackWrapper}>
+        <Link to='/' className={styles.linkBack}>
+          <ArrowBackIcon />
+          {text.linkBack}
+        </Link>
+      </Box>
       <Typography
         component='h2'
         variant='h3'
@@ -26,11 +44,16 @@ export function NotePage({ mode }: INotePageProps): JSX.Element {
       </Typography>
       <NoteForm />
       <Box className={styles.btns}>
-        <Button variant='contained' color='success'>
+        <Button variant='contained' color='success' onClick={handleSubmit}>
           {text.note_page[mode].button.submit}
         </Button>
         {mode === EDIT && (
-          <Button variant='contained' color='error' startIcon={<DeleteIcon />}>
+          <Button
+            variant='contained'
+            color='error'
+            startIcon={<DeleteIcon />}
+            onClick={handleDelete}
+          >
             {text.note_page[mode].button.delete}
           </Button>
         )}

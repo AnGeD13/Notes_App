@@ -1,13 +1,16 @@
 import { ScopedCssBaseline } from '@mui/material';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 
 import App from './app/App.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <ScopedCssBaseline>
-      <App />
-    </ScopedCssBaseline>
+    <BrowserRouter>
+      <ScopedCssBaseline>
+        <App />
+      </ScopedCssBaseline>
+    </BrowserRouter>
   </StrictMode>,
 );

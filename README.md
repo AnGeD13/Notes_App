@@ -8,7 +8,7 @@ This is a portfolio project where I plan to impove my skills in frontend (React)
 
 ## Tech Stack
 
-- **Frontend**: React, TypeScript, Material UI
+- **Frontend**: React, TypeScript, Material UI, React Router v6 
 - **Architecture**: Feature-Sliced Design [(FSD)](https://feature-sliced.design/)
 - **Tools**: ESLint, Prettier, Vite, CSS Modules
 
@@ -39,6 +39,7 @@ npm run dev
 - **pages**: Pages or large parts of page in nested routing. It currently contains two pages:
   - **home**: page for a list of notes.
   - **note**: page with a form where you will be able to create and edit notes.
+  - **not-found**: page for displaying invalid urls.
 - **widgets**: Large self-contained chunks of functionality or UI. It currently contains:
     - **notes-list**: Contains UI and a mocked list of notes for rendening.
     - **note-form**: Contains UI for the title and description fields and drap&drop feature for files (.PNG, .JPG)
@@ -64,11 +65,16 @@ npm run dev
     - of adding and deleting file;
     - of opening the dialog window.
 4. Config text in json format for future localization.
+5. Routing is done by using React Router v6.
+6. Not Found Page is for displaying invalid urls.
 
 ## Screens
 
 The page with the list of notes:
 ![notes list](/public/screens_for_readme/notes-list.png)
+
+Not found page:
+![page with status 404](/public/screens_for_readme/notfound.png)
 
 The page of creation note:
 ![page of creation note](/public/screens_for_readme/notepage-create.png)

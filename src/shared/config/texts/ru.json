@@ -1,4 +1,5 @@
 {
+  "linkBack": "Назад",
   "dialog": {
     "button": {
       "close": "Закрыть просмотр файла"
@@ -7,6 +8,10 @@
   "note": {
     "createdAt": "Дата создания",
     "updatedAt": "Дата редактирования"
+  },
+  "notfound_page": {
+    "title": "Страница не найдена",
+    "status": "404"
   },
   "note_page": {
     "general": {

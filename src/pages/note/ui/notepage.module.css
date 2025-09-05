@@ -9,3 +9,20 @@
   display: flex;
   justify-content: space-between;
 }
+
+.linkBackWrapper {
+  display: flex;
+}
+
+.linkBack {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  text-decoration: none;
+  color: var(--color-secondary);
+  transition-duration: var(--transition-duration);
+}
+
+.linkBack:hover {
+  color: var(--color-dark);
+}
